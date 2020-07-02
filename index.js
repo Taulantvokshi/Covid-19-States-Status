@@ -2,7 +2,6 @@ const express = require('express');
 const app = express();
 const axios = require('axios');
 const path = require('path');
-//const fs = require('fs');
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
@@ -44,5 +43,5 @@ app.use('*', (req, res) => {
 });
 
 app.listen(3000, () => {
-  console.log('server is running on: http://localhost:3000');
+  console.log('Server is running on: http://localhost:3000');
 });
